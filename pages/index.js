@@ -1,11 +1,8 @@
 import { getPokemonsFetchQuery } from "../src/graphql/getPokemons";
-import { useEffect, useState } from "react";
 /** @jsxImportSource @emotion/react */
-import { css, jsx } from "@emotion/react";
+import { css } from "@emotion/react";
 import MainLayout from "../src/layouts/mainLayout";
 import CardPokemon from "../src/components/cardPokemon";
-import Link from "next/link";
-import { route } from "../src/helpers/route";
 
 export default function Home({ pokemons }) {
   return (
@@ -34,7 +31,6 @@ export const getServerSideProps = async (ctx) => {
   const pokemonListResponse = await getPokemonsFetchQuery({
     limit: 10,
   });
-  console.log(pokemonListResponse);
   // Pass data to the page via props
   return { props: { pokemons: pokemonListResponse.pokemons } };
 };
