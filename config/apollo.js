@@ -1,6 +1,7 @@
 import withApollo from "next-with-apollo";
 import ApolloClient, { InMemoryCache } from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
+import { ApolloProvider as ApolloProvider2 } from "@apollo/client";
 import { getDataFromTree } from "@apollo/react-ssr";
 export default withApollo(
   () => {
@@ -18,7 +19,9 @@ export default withApollo(
     render: ({ Page, props }) => {
       return (
         <ApolloProvider client={props.apollo}>
-          <Page {...props} />
+          <ApolloProvider2 client={props.apollo}>
+            <Page {...props} />
+          </ApolloProvider2>
         </ApolloProvider>
       );
     },
