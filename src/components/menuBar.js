@@ -2,7 +2,7 @@
 import { css, jsx } from "@emotion/react";
 import Link from "next/link";
 
-export default function MenuBar(props) {
+export default function MenuBar() {
   return (
     <div
       data-testid="container-link"
@@ -20,7 +20,7 @@ export default function MenuBar(props) {
         z-index: 10;
       `}
     >
-      <Link id="pokemon-list-link" href="/">
+      <Link href="/">
         <div
           css={css`
             display: flex;
