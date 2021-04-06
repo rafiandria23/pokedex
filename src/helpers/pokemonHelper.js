@@ -19,24 +19,46 @@ export function getMyPokemons() {
   return myPokemons;
 }
 
-function addMyPokemon(pokemon) {
+export function addMyPokemon(pokemon) {
   localStorage.setItem("myPokemons", JSON.stringify(pokemon));
 }
 
-export function releasePokemon(pokemonNickname) {
-  let updatedPokemons = getMyPokemons().filter((pokemon) => {
-    console.log(pokemon.nickname, pokemonNickname);
-    return pokemon.nickname !== pokemonNickname;
+export function releasePokemon(pokemonNickname, cb) {
+  Swal.fire({
+    title: `Are you sure want to release ${pokemonNickname}?`,
+    text: "You won't be able to revert this!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Release",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      let updatedPokemons = getMyPokemons().filter((pokemon) => {
+        console.log(pokemon.nickname, pokemonNickname);
+        return pokemon.nickname !== pokemonNickname;
+      });
+      cb();
+      addMyPokemon(updatedPokemons);
+    }
   });
-
-  addMyPokemon(updatedPokemons);
 }
 
-export function catchPokemon(pokemonName, pokemonImage) {
+export function countTotalOwnedPokemon(pokemonList, pokemonName) {
+  let count = 0;
+  pokemonList?.forEach((pokemon) => {
+    if (pokemon.name === pokemonName) {
+      count++;
+    }
+  });
+  return count;
+}
+
+export async function catchPokemon(pokemonName, pokemonImage, pokemonId) {
   let myPokemons = getMyPokemons();
 
   if (getProbabilityCatch()) {
-    return Swal.fire({
+    const { value: nickname } = await Swal.fire({
       title: `Yeay! you caught a ${formatStringFromString(pokemonName)}`,
       input: "text",
       inputLabel: `Enter nickname for ${formatStringFromString(pokemonName)}:`,
@@ -49,6 +71,7 @@ export function catchPokemon(pokemonName, pokemonImage) {
             return "Nickname already in use";
           } else {
             myPokemons.push({
+              id: pokemonId,
               image: pokemonImage,
               name: pokemonName,
               nickname: value,
@@ -58,9 +81,26 @@ export function catchPokemon(pokemonName, pokemonImage) {
         }
       },
     });
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+    });
+    if (nickname) {
+      Toast.fire({
+        icon: "success",
+        title: `Successfully catch ${pokemonName} with Nickname ${nickname}`,
+      });
+    }
   } else {
     return Swal.fire({
-      title: `Oops, you failed to catch ${pokemonName}`,
+      title: `Oops, you failed to catch ${formatStringFromString(pokemonName)}`,
       text: "Keep trying!:)",
       imageUrl: "https://media2.giphy.com/media/ic0iE4NVz0vGiNpxjd/source.gif",
       imageWidth: 400,

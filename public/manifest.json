@@ -1,0 +1,18 @@
+{
+  "short_name": "Pokedex",
+  "name": "Pokemon Deck",
+  "icons": [
+    {
+      "src": "/pokeball.png",
+      "type": "image/png",
+      "sizes": "441x441",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#3367D6",
+  "description": "This is Pokemon Deck created by Fajrin"
+}

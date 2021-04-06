@@ -1,5 +1,5 @@
+import { useLazyQuery } from "@apollo/client";
 import gql from "graphql-tag";
-import { useQuery } from "@apollo/react-hooks";
 import { GraphQLClient } from "graphql-request";
 
 const query = /* GraphQL */ `
@@ -23,6 +23,10 @@ const query = /* GraphQL */ `
   }
 `;
 
+const GET_POKEMONS = gql`
+  ${query}
+`;
+
 export async function getPokemonsFetchQuery(variables) {
   const graphQLClient = new GraphQLClient(
     "https://graphql-pokeapi.vercel.app/api/graphql"
@@ -30,4 +34,11 @@ export async function getPokemonsFetchQuery(variables) {
 
   const data = await graphQLClient.request(query, variables);
   return data;
+}
+
+export function useLazyQueryGetPokemons({ onCompleted, onError }) {
+  return useLazyQuery(GET_POKEMONS, {
+    onCompleted,
+    onError,
+  });
 }
