@@ -21,7 +21,7 @@
     "apollo-boost": "^0.4.9",
     "babel-jest": "^26.6.3",
     "graphql": "^16.0.0",
-    "graphql-request": "^3.4.0",
+    "graphql-request": "^6.0.0",
     "graphql-tag": "^2.12.3",
     "next": "14.2.3",
     "next-pwa": "^5.1.4",
