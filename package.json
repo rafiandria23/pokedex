@@ -31,7 +31,7 @@
     "react-infinite-scroll-component": "^6.0.0",
     "react-responsive-carousel": "^3.2.18",
     "react-router-dom": "^6.0.0",
-    "sweetalert2": "^10.15.7"
+    "sweetalert2": "^11.0.0"
   },
   "devDependencies": {
     "@wojtekmaj/enzyme-adapter-react-17": "^0.8.0",
