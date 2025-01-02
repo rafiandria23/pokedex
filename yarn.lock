@@ -5508,9 +5508,9 @@ supports-preserve-symlinks-flag@^1.0.0:
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
 sweetalert2@^11.0.0:
-  version "11.15.6"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.15.6.tgz#5380ce7a74c9684793a8d3e86b94f4ebb51df348"
-  integrity sha512-OyJQsMlIZPfKHXXPkChQMqoaskPOgF8OnxjShHmyOP8T7KQjrjwXu3qD2pwExrUkVhXFVhoxZovOXG0G+7TCag==
+  version "11.15.8"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.15.8.tgz#202c2848b003f3c4b40c631f2acea9347a4d970a"
+  integrity sha512-6HkGbI7yftv+ZWCQvAOj7CUdN5u5ySNh6fU+NVXs9NWs8rL5X2HvNsE6xM8Xeer6khDhddhAffL2x6PUs3eS3g==
 
 symbol-observable@^1.0.2:
   version "1.2.0"
