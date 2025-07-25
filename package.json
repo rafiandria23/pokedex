@@ -23,7 +23,7 @@
     "graphql": "^16.0.0",
     "graphql-request": "^7.0.0",
     "graphql-tag": "^2.12.3",
-    "next": "15.4.3",
+    "next": "15.4.4",
     "next-pwa": "^5.1.4",
     "next-with-apollo": "^5.1.1",
     "react": "19.1.0",
