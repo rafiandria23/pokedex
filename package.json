@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@apollo/client": "^3.3.13",
+    "@apollo/client": "^4.0.0",
     "@apollo/react-hooks": "^4.0.0",
     "@apollo/react-ssr": "^4.0.0",
     "@brainhubeu/react-carousel": "^2.0.0",
