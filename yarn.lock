@@ -5910,9 +5910,9 @@ supports-preserve-symlinks-flag@^1.0.0:
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
 sweetalert2@^11.0.0:
-  version "11.26.11"
-  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.26.11.tgz#7807d321e0119934be73139f51f09663171a6625"
-  integrity sha512-vie8YkFKRJ88l57Jn/haWQBQ85eqQg3QF5GdsafLYYSM1dx7sAp3+9ix8ljkZuoJzPZVdTdGSB6HECFtSo0MfA==
+  version "11.26.12"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.26.12.tgz#252f434eaa60266bbbbb2647af17601a9248b6b1"
+  integrity sha512-9Z/ZkqlOTtHcurauL8OZCr+YCbyxyEwK7gA1uXn2JeFMq2T7F9ISWEw9ozfLdtbzrPId1/LzhP02RizhChFQ0g==
 
 symbol-observable@^1.0.2:
   version "1.2.0"
