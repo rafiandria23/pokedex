@@ -5282,10 +5282,10 @@ react-easy-swipe@^0.0.21:
   dependencies:
     prop-types "^15.5.8"
 
-react-infinite-scroll-component@^6.0.0:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/react-infinite-scroll-component/-/react-infinite-scroll-component-6.1.1.tgz#081d0e13ef1d6b77079f344b4bf5f1d5e6d5e759"
-  integrity sha512-R8YoOyiNDynSWmfVme5LHslsKrP+/xcRUWR2ies8UgUab9dtyw5ECnMCVPPmnmjjF4MWQmfVdRwRWcWaDgeyMA==
+react-infinite-scroll-component@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/react-infinite-scroll-component/-/react-infinite-scroll-component-7.0.0.tgz#0e0fa7013d61e154f98f4ae9a458a172657c1012"
+  integrity sha512-WBnGiIZjGFC82FRRbq7wgGit7G/UH5XtyR8+qfpKaw2RyvGz3C+AF88Ck/L6MlHOlGEk/dt3D7hLGdWKj+BISA==
   dependencies:
     throttle-debounce "^2.1.0"
 
