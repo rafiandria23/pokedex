@@ -28,7 +28,7 @@
     "next-with-apollo": "^5.1.1",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "react-infinite-scroll-component": "^6.0.0",
+    "react-infinite-scroll-component": "^7.0.0",
     "react-responsive-carousel": "^3.2.18",
     "react-router-dom": "^7.0.0",
     "sweetalert2": "^11.0.0"
