@@ -5283,11 +5283,9 @@ react-easy-swipe@^0.0.21:
     prop-types "^15.5.8"
 
 react-infinite-scroll-component@^7.0.0:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/react-infinite-scroll-component/-/react-infinite-scroll-component-7.0.1.tgz#17d429f1651c101c0e788e6dbed84c0b419931ff"
-  integrity sha512-MB3JiV+83/VTrojaxcZuO/u9pnxrLO/ZeX4g1zc1kcj9Hdgz43mMCZ9R9QjvSqdhmS9aquABx4PFEhvAVmbVag==
-  dependencies:
-    throttle-debounce "^2.1.0"
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/react-infinite-scroll-component/-/react-infinite-scroll-component-7.1.0.tgz#b3bee729362e37df0730e35f2c06a3dc94cefde3"
+  integrity sha512-EPUMyOnpmJDqI1aoUi9uR/TSUfJCUN77ZkpzYSshGwrC2NTaH6p+rxaP/2DZJWygOZmZcAieZk4VciF8q9H/tw==
 
 "react-is@^16.12.0 || ^17.0.0 || ^18.0.0", react-is@^18.3.1:
   version "18.3.1"
@@ -6022,11 +6020,6 @@ test-exclude@^6.0.0:
     "@istanbuljs/schema" "^0.1.2"
     glob "^7.1.4"
     minimatch "^3.0.4"
-
-throttle-debounce@^2.1.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/throttle-debounce/-/throttle-debounce-2.3.0.tgz#fd31865e66502071e411817e241465b3e9c372e2"
-  integrity sha512-H7oLPV0P7+jgvrk+6mwwwBDmxTaxnu9HMXmloNLXwnNO0ZxZ31Orah2n8lU1eMPvsaowP2CX+USCgyovXfdOFQ==
 
 tmpl@1.0.5:
   version "1.0.5"
