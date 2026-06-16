@@ -20,7 +20,7 @@
     "@testing-library/react": "^16.0.0",
     "apollo-boost": "^0.4.9",
     "babel-jest": "^30.0.0",
-    "graphql": "^16.0.0",
+    "graphql": "^17.0.0",
     "graphql-request": "^7.0.0",
     "graphql-tag": "^2.12.3",
     "next": "16.2.9",
